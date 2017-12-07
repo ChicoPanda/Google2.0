@@ -1,0 +1,149 @@
+*{box-sizing: border-box;}
+html{
+       background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    font-size: 20px;}
+
+/*Cabezera*/
+#head{
+
+    font-size: 3.5rem;
+    text-align: center; 
+    padding-bottom: 50px;
+    margin:0;
+    color:white;
+      
+}
+/*Movilidad*/
+#contenedorSelect { 
+    
+    
+    padding: 10px;
+    margin-bottom: 3px;
+      
+}
+
+#toggle{
+  
+   padding: 10px;
+   font-size: 1.2rem;
+    
+}
+
+h2{
+    margin: 0;
+    font-size: 1.2rem;
+}
+#contenedorSelect select{
+    font-size: 1.7rem;
+     
+    margin: 30px;
+}
+#contenedorSelect select option{
+    font-size: 0.9rem;
+     
+   
+}
+/*COMIENZA EL TOOGLE*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+/*Esto es para el toggle*/
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+#ContenedorTooggle, #Ciclos, #Pais, #toglecito{
+
+    
+    display: block; 
+}
+#conten{
+    font-size: 3rem;
+}
+.Check{
+  
+    width:20px;
+    height: 20px;
+}
+#ContenedorTooggle{
+    
+    
+    padding-top: 30px;
+    width: 52%;
+    display: flex;
+   
+}
+#toglecito{
+    padding: 20px;
+    padding-top: 0px;
+}
+#Buscar{font-size: 30px;width: 100%;}
+    #markall{font-size: 30px; width: 100%;}
+    #Limpiar{font-size: 30px;width: 100%;}
+    #desmarkall{font-size: 30px;width: 100%;}
+
+    
+
+/*Css*/
+
+
+@media only screen and (max-width: 500px) {
+   
+    #ContenedorTooggle{
+        width: 100%;
+    }
+    #Pais,#Ciclos{ 
+        width: 32%;
+
+    } 
+}
